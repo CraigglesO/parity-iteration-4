@@ -1,0 +1,80 @@
+.Health {
+}
+
+#node-health-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 235px;
+  font-size: 16px;
+}
+
+#node-health-chain {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  color: white;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+#node-health-timeDiff {
+  position: absolute;
+  top: 8px;
+  right: 35px;
+}
+
+#node-health-progress {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CircularProgress-Bg {
+  stroke: #ccd1d9;
+  fill: none;
+}
+.CircularProgress-Fg {
+  stroke: #a0d468;
+  fill: none;
+}
+.CircularProgress-Text {
+  font-size: 22px;
+  fill: #a0d468;
+}
+
+#node-health-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+#node-pulse {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffce54;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255,206,84,0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255,206,84, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255,206,84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255,206,84, 0);
+  }
+}

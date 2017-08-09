@@ -1,0 +1,79 @@
+.Time {
+  line-height: 133px;
+}
+
+.c-clock {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid #4fc1e9;
+	position: relative;
+	margin: auto;
+  margin-top: 17.5px;
+  pointer-events: none;
+}
+
+#c-clock-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+	width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4fc1e9;
+  transform: translate(-50%, -50%);
+}
+
+#c-clock-day {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 2.5px;
+  border: 1.5px solid #bcbcbc;
+  transform: translateY(-50%);
+}
+
+#c-clock-day-time {
+  position: absolute;
+  color: #bcbcbc;
+  top: -16px;
+  right: 15px;
+  font-size: 12px;
+}
+
+#c-clock-second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 40px;
+  background-color: #ed5565;
+  transform: translate(-50%,-100%) rotate(180deg);
+  transform-origin: bottom center;
+}
+
+#c-clock-minute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: #3bafda;
+  border-radius: 1px;
+  transform: translate(-50%,-100%) rotate(180deg);
+  transform-origin: bottom center;
+}
+
+#c-clock-hour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 17.5px;
+  background-color: #2999b7;
+  border-radius: 5px;
+  transform: translate(-50%,-100%) rotate(0deg);
+  transform-origin: bottom center;
+}

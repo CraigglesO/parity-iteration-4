@@ -1,0 +1,45 @@
+.News {
+  position: relative;
+  margin: 15px;
+  margin-bottom: 0;
+  height: 37.5px;
+  line-height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  color: grey;
+  overflow: hidden;
+  /*box-shadow: 7px 9px 20px -18px rgba(0,0,0,0.75);*/
+  box-shadow: 0px 6px 4px -3px rgba(128,128,128,0.3);
+  cursor: pointer;
+}
+
+#news-message-type {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #fc6e51;
+  color: white;
+}
+#news-message-type:after, #news-message-type:before {
+  position: absolute;
+  border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	left: 100%;
+	top: 50%;
+  border-left-color: #fc6e51;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+#news-message {
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  width: calc(100% - 105px);
+  padding: 0 5px;
+  text-overflow: ellipsis;
+}
